@@ -452,4 +452,4 @@ export default function ConsentFormPro() {
         {/* Submit */}
         <div className="flex items-center gap-4">
           <button onClick={handleSubmit} disabled={saving} className="btn-primary bg-red-700 text-white py-2 px-4 rounded">
-            {saving ? "S
+            {saving ? "Saving..." : "Submit"}
