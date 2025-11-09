@@ -1,0 +1,9 @@
+{
+  "name": "Thusanang Digital System",
+  "short_name": "Thusanang",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ef4444",
+  "description": "Policy24 Application + Consent Form System"
+}
