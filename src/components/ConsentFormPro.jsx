@@ -449,12 +449,45 @@ export default function ConsentFormPro() {
           </div>
         </div>
 
-        {/* Submit */}
+                   {/* Submit */}
         <div className="flex items-center gap-4">
-          <button onClick={handleSubmit} disabled={saving} className="btn-primary bg-red-700 text-white py-2 px-4 rounded">
+          <button
+            onClick={handleSubmit}
+            disabled={saving}
+            className="btn-primary bg-red-700 text-white py-2 px-4 rounded"
+          >
             {saving ? "Saving..." : "Submit"}
+          </button>
+        </div>
 
-      </button>
+        {/* Verification Dashboard (optional placeholder) */}
+        <VerificationDashboard />
+
+        {/* Success Modal */}
+        {modal.open && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white p-6 rounded shadow max-w-md text-center space-y-4">
+              <h2 className="text-xl font-semibold text-green-700">Success</h2>
+              <p>{modal.message}</p>
+              {modal.pdfUrl && (
+                <button
+                  onClick={() => openPreview(modal.pdfUrl)}
+                  className="text-sm text-blue-600 underline"
+                >
+                  View PDF
+                </button>
+              )}
+              <button
+                onClick={() => setModal({ open: false, message: "", pdfUrl: null })}
+                className="mt-4 py-2 px-4 bg-red-700 text-white rounded"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
-  )
+  );
 }
+                                                   
