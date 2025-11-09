@@ -1,7 +1,7 @@
 import React from 'react'
 import ApplicationForm from './components/ApplicationForm.jsx'
 import ConsentForm from './components/ConsentForm.jsx'
- import ConsentFormPro from './components/ConsentFormPro.jsx
+ import ConsentFormPro from './components/ConsentFormPro.jsx'
 import ApplicationFormOfficial from './components/ApplicationFormOfficial.jsx'
 export default function App() {
   return (
