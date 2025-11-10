@@ -13,14 +13,16 @@
     "start": "serve -s dist",
     "postinstall": "npm rebuild --arch=x64 --platform=linux"
   },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.46.0",
-    "pdf-lib": "^1.17.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-signature-canvas": "^1.0.7",
-    "vite": "5.3.4"
-  },
+
+"dependencies": {
+  "@rollup/rollup-linux-x64-gnu": "4.24.0",
+  "@supabase/supabase-js": "^2.46.0",
+  "pdf-lib": "^1.17.1",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-signature-canvas": "^1.0.7",
+  "vite": "5.3.4"
+},
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.35",
