@@ -8,23 +8,23 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node node_modules/vite/bin/vite.js build",
+    "build": "vite build",
     "preview": "vite preview",
     "start": "serve -s dist",
-    "postinstall": "npm rebuild"
+    "postinstall": "npm rebuild --arch=x64 --platform=linux"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.46.0",
     "pdf-lib": "^1.17.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-signature-canvas": "^1.0.7"
+    "react-signature-canvas": "^1.0.7",
+    "vite": "5.3.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.35",
     "serve": "^14.2.5",
-    "tailwindcss": "^3.4.14",
-    "vite": "5.3.4"
+    "tailwindcss": "^3.4.14"
   }
 }
