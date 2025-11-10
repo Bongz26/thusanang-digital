@@ -2,6 +2,10 @@
   "name": "thusanang-digital",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "node node_modules/vite/bin/vite.js build",
