@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "./build.sh",
+    "build": "node node_modules/vite/bin/vite.js build",
     "preview": "vite preview",
     "start": "serve -s dist"
   },
